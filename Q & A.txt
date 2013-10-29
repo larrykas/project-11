@@ -1,0 +1,29 @@
+Project 11
+
+You are given a project from a client. The client wants you to create a banking system. Here is what your program needs to do:
+
+1. Allow a customer to deposit/withdraw/transfer and check the balance of their account.
+
+To help you get started, here is a skeleton class:
+class Account
+  #should keep track of the customers name, their balance 
+  #and you should create methods to allow for 
+  #deposit, withdrawal and transferring of funds
+end
+
+a = Account.new
+a.account_holder = ‘Steve’ 
+a.deposit 100
+puts a.balance #should print 100
+
+a.withdraw 25
+puts a.balance #should print 75
+
+b = Account.new
+b.account_holder = ‘Jeron’
+b.deposit 4000
+puts b.balance #should print 4000
+
+Account.transfer(50, a, b)  #What we are saying here is I want to transfer 50 from a to b
+puts a.balance #should print 25
+puts b.balance #should print 4025
