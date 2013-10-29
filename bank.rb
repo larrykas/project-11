@@ -31,7 +31,7 @@ def initialize(balance, name, account_number)
 #######################################################################################################
  
 Larry$ irb
-irb(main):001:0> require './Bank.rb'
+irb(main):001:0> require './bank.rb'
 => true
 irb(main):002:0> a = Account.new(0, "Steve", 011234)
 => #<Account:0x007fc04481e280 @balance=0, @name="Steve", @account_number=4764>
